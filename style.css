@@ -12,8 +12,8 @@
   justify-content: center;
 }
 
-.checkbox-toggle{
-  background-color: #d2d2d2;
+.toggle{
+  
   width: 100px;
   height: 50px;
   border-radius: 100px;
@@ -23,7 +23,7 @@
   
 }
 
-.checkbox-toggle::before{
+.toggle::before{
   position: absolute;
   content: "";
   background-color: #ececec;
@@ -34,10 +34,10 @@
   transition: 0.2s;
   box-shadow: 1px 0px 6px  black;
 }
-input:checked + .checkbox-toggle{
+input:checked + .toggle{
   background-color: #063e46;
 }
-input:checked + .checkbox-toggle::before{
+input:checked + .toggle::before{
   transform: translateX(50px);
   box-shadow: -1px 0px 10px  black;
 }
